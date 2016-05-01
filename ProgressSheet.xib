@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10116"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ProgressSheet" customModule="ProgressSheet" customModuleProvider="target">
+            <connections>
+                <outlet property="messageField" destination="MEr-E4-yx3" id="KkF-YT-phI"/>
+                <outlet property="progressBarField" destination="YqE-ne-qeD" id="64z-K6-r6b"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="480" height="83"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <value key="minSize" type="size" width="480" height="83"/>
+            <value key="maxSize" type="size" width="480" height="500"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="83"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <progressIndicator wantsLayer="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="YqE-ne-qeD">
+                        <rect key="frame" x="20" y="19" width="440" height="20"/>
+                    </progressIndicator>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="MEr-E4-yx3">
+                        <rect key="frame" x="18" y="46" width="37" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="440" id="Iwx-GT-1jA"/>
+                        </constraints>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Label" id="brj-id-I4H">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YqE-ne-qeD" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="CVk-IJ-Vyw"/>
+                    <constraint firstItem="MEr-E4-yx3" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="LbD-W9-hEh"/>
+                    <constraint firstAttribute="bottom" secondItem="YqE-ne-qeD" secondAttribute="bottom" constant="20" id="QkS-Hv-zMs"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MEr-E4-yx3" secondAttribute="trailing" constant="20" id="nQV-wn-E3s"/>
+                    <constraint firstAttribute="trailing" secondItem="YqE-ne-qeD" secondAttribute="trailing" constant="20" id="nhq-oD-z9J"/>
+                    <constraint firstItem="YqE-ne-qeD" firstAttribute="top" secondItem="MEr-E4-yx3" secondAttribute="bottom" constant="8" id="oSz-gI-BUB"/>
+                    <constraint firstItem="MEr-E4-yx3" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" id="rFP-tu-TkF"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="325" y="95.5"/>
+        </window>
+    </objects>
+</document>

@@ -10,6 +10,8 @@
 		55DE0E881CD6B1D50036447D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE0E871CD6B1D50036447D /* AppDelegate.swift */; };
 		55DE0E8A1CD6B1D50036447D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55DE0E891CD6B1D50036447D /* Assets.xcassets */; };
 		55DE0E8D1CD6B1D50036447D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55DE0E8B1CD6B1D50036447D /* MainMenu.xib */; };
+		55DE0E961CD6B1F20036447D /* ProgressSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE0E941CD6B1F20036447D /* ProgressSheet.swift */; };
+		55DE0E971CD6B1F20036447D /* ProgressSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55DE0E951CD6B1F20036447D /* ProgressSheet.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +20,8 @@
 		55DE0E891CD6B1D50036447D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55DE0E8C1CD6B1D50036447D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		55DE0E8E1CD6B1D50036447D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55DE0E941CD6B1F20036447D /* ProgressSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressSheet.swift; sourceTree = SOURCE_ROOT; };
+		55DE0E951CD6B1F20036447D /* ProgressSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressSheet.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				55DE0E871CD6B1D50036447D /* AppDelegate.swift */,
+				55DE0E941CD6B1F20036447D /* ProgressSheet.swift */,
+				55DE0E951CD6B1F20036447D /* ProgressSheet.xib */,
 				55DE0E891CD6B1D50036447D /* Assets.xcassets */,
 				55DE0E8B1CD6B1D50036447D /* MainMenu.xib */,
 				55DE0E8E1CD6B1D50036447D /* Info.plist */,
@@ -117,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55DE0E8A1CD6B1D50036447D /* Assets.xcassets in Resources */,
+				55DE0E971CD6B1F20036447D /* ProgressSheet.xib in Resources */,
 				55DE0E8D1CD6B1D50036447D /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -128,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55DE0E961CD6B1F20036447D /* ProgressSheet.swift in Sources */,
 				55DE0E881CD6B1D50036447D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
