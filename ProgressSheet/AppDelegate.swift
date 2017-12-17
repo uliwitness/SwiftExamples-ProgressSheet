@@ -13,9 +13,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 	@IBOutlet weak var window: NSWindow!
 	var progressSheet: ProgressSheet?
-	var timer: NSTimer?
+	var timer: Timer?
 	
-	func driveProgress( sender: NSTimer ) -> Void {
+	@objc func driveProgress( sender: Timer ) -> Void {
 		progressSheet?.progressBarField.doubleValue += 10;
 		
 		if( progressSheet?.progressBarField.doubleValue == progressSheet?.progressBarField.maxValue )
@@ -24,14 +24,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		}
 	}
 	
-	func applicationDidFinishLaunching(aNotification: NSNotification) {
+	@objc func applicationDidFinishLaunching(_ aNotification: Notification) {
 		progressSheet = ProgressSheet()
 		self.window.beginSheet((progressSheet?.window)!, completionHandler: nil )
 		progressSheet?.messageField.stringValue = "The quick brown fox jumps over the lazy dog's back where it runs and runs and runs and might never stop running if this text needs to be any longer."
-		timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: #selector(driveProgress), userInfo: nil, repeats: true)
+		timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(driveProgress(sender:)), userInfo: nil, repeats: true)
 	}
 
-	func applicationWillTerminate(aNotification: NSNotification) {
+	@objc func applicationWillTerminate(_ aNotification: Notification) {
 		// Insert code here to tear down your application
 	}
 

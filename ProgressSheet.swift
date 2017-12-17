@@ -9,7 +9,7 @@
 import Cocoa
 
 public class ProgressSheet: NSWindowController {
-	override public var windowNibName: String? { get { return "ProgressSheet" } }
+	override public var windowNibName: NSNib.Name? { get { return NSNib.Name("ProgressSheet") } }
 	@IBOutlet weak var messageField: NSTextField!
 	@IBOutlet weak var progressBarField: NSProgressIndicator!
 	
